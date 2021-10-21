@@ -1,0 +1,502 @@
+:root {
+    --yellow-gold: #fabd3b;
+    --dark-grey: #2e2e2e;
+    --soft-blue: #597492;
+    --dark-blue: #153861;
+    --blue-grey: #ADBCCE;
+    --baby-blue: #DDEAF3;
+    --cold-white: #FDFDFD;
+    --cold-blue: rgba(54, 163, 177, 0.055);
+    --blue-aqua: #53b8bb;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+}
+
+html,
+body{
+  width:100%;
+  overflow-x:hidden;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--soft-blue);
+    box-shadow: 0px 4px 8px rgba(29, 37, 71, 0.657);
+    border-radius: 4px;
+}
+
+header .header--logo {
+    height: 55px;
+}
+
+header h2 {
+    font-size: 3.8rem;
+    font-weight: bold;
+    line-height: 2rem;
+    color: var(--cold-white);
+}
+
+header .header-container--info {
+    display: flex;
+    align-items: center;
+}
+
+
+.header-nav,
+.drop-nav {
+    background: var(--yellow-gold);
+    
+}
+
+li img {
+    width: 35px;
+    height: auto;
+}
+
+.badge {
+    background-color: #6394f8;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 1.1rem;
+    padding: 3px 7px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap; 
+}
+
+.header-nav {
+    float: right;
+    border-radius: 4px;
+    margin-top: 8px;
+    border: solid 1px #1e2a36;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.dropdown {
+    width: 100%;
+}
+
+.drop-nav {
+    width: 70px;
+    height: auto;
+}
+
+.header-nav > li {
+    float: left;
+    border-left: solid 1px #1e2a36;
+}
+
+.header-nav li:first-child {
+    border-left: none;
+}
+
+.header-nav a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.1rem;
+    color: var(--dark-blue);
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown:after {
+    content: "\25bc";
+    font-size: .5em;
+    display: block;
+    position: absolute;
+    top: 38%;
+    right: 12%;
+}
+
+.drop-nav {
+    position: absolute;
+    display: none;
+}
+
+.drop-nav li {
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.dropdown:hover > .drop-nav {
+    display: block;
+    background: var(--blue-grey);
+}
+
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--cold-blue);
+    text-align: center;
+}
+
+main .main-learning-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .main-imgbk {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('../graphics/img/learningthingsp2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+main .main-learning-container h1 {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    color: var(--dark-blue);
+    
+}
+
+main .main-learning-container .main-input {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main h2 {
+    margin-top: 50px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--dark-blue);
+}
+
+main .main-input--container {
+    position: absolute;
+    width: 250px;
+    border-radius: 100px;
+    border: 1px solid #d8d9dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: calc(50% - 120px);
+}
+
+main .main-input input { /* iguala un poco al buscador de google */
+    width: 220px;
+    height: 25px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+main .main-input--container:hover {
+    box-shadow: 0 1px 6px #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main-input .search-icon {
+    /* position: absolute; */
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    
+}
+
+main .courses-container--slider {
+    display: flex;
+    height: auto;
+    /* border: 2px solid yellowgreen; */
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+main .courses-container--card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 10px 0;
+    padding: 0 15px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+main .course-card--title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: #38608d;
+    padding-top: 10px;
+}
+
+main .course--card_body {
+    width: 100%;
+    height: auto;
+    bottom: auto;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1rem;
+    color: #38608d;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+}
+
+main .course-card .python {
+    display: inline-block;
+    width: 90%;
+    height: 190px;
+    background-image: url('../graphics/img/python.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .course-card .javascript {
+    display: inline-block;
+    width: 90%;
+    height: 190px;
+    background-image: url('../graphics/img/JavaScript-logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .course-card .english {
+    display: inline-block;
+    width: 90%;
+    height: 190px;
+    background-image: url('../graphics/img/ingles.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .course-card .marketing {
+    display: inline-block;
+    width: 90%;
+    height: 190px;
+    background-image: url('../graphics/img/marketing.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .course-card .couching {
+    display: inline-block;
+    width: 90%;
+    height: 190px;
+    background-image: url('../graphics/img/couching.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-schools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    padding: 15px;
+
+}
+
+.main-schools-container--title {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2rem;
+    color: var(--dark-blue);
+}
+
+.main-schools-container--body {
+    width: 100%;
+    height: auto;
+    min-width: 288px;
+    max-width: 350px;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.container-list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-top: 5px;
+    padding-left: 5px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    background-color: rgba(182, 138, 82, 0.123);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+}
+
+.container-list .gear {
+    width: 30px;
+    height: 30px;
+    right: 240px;
+    background-image: url('../graphics/icons/gears.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-list .eng {
+    width: 30px;
+    height: 30px;
+    right: 240px;
+    background-image: url('../graphics/icons/bulb.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-list .mark {
+    width: 25px;
+    height: 25px;
+    right: 240px;
+    background-image: url('../graphics/icons/check-circle.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-list .couch {
+    width: 30px;
+    height: 30px;
+    right: 240px;
+    margin: 0 2px;
+    background-image: url('../graphics/icons/couch.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.items {
+    margin-left: 5px;
+    margin: 2px 0;
+    width: auto;
+    height: auto;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    color: var(--dark-blue);  
+}
+
+.main-new-courses {
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.main-new-courses--title {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+}
+
+.main-new-courses .new-courses {
+    width: 90%;
+    min-width: 230px;
+    max-width: 350px;
+    height: auto;
+    text-align: justify;
+    background-color: rgba(182, 138, 82, 0.123);
+    border-radius: 8px;
+    margin: 20px;
+    padding: 15px 0;
+}
+
+.main-new-courses 
+.new-courses--title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.3rem;
+    color: var(--dark-blue);
+    padding-bottom: 10px;
+}
+
+.main-new-courses 
+.new-courses--body {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.3rem;
+    color: var(--soft-blue);
+}
+
+footer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    height: 45px;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--soft-blue);
+    box-shadow: 4px 0px 8px rgba(29, 37, 71, 0.657);
+    border-radius: 4px;
+}
+
+footer h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+    color: white;
+}
+
+.footer-nav li {
+    display: inline-block;
+}
+
+.footer-nav li a {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    color: var(--soft-blue);
+    padding: 5px;
+    border-radius: 2px; /*Redondea los bordes de las cajas*/
+    text-decoration: none;
+}
