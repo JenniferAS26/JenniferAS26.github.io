@@ -46,7 +46,7 @@ header {
     position: relative;
     display: flex;
     width: 100%;
-    min-width: 320px;
+    min-width: 288px;
     height: fit-content;
     justify-content: space-between;
     align-items: center;
@@ -549,7 +549,7 @@ footer {
     position: relative;
     display: flex;
     width: 100%;
-    min-width: 320px;
+    min-width: 288px;
     height: 45px;
     justify-content: space-between;
     align-items: center;
