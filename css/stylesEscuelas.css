@@ -267,6 +267,8 @@ main .main-shopping-options {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    min-width: 288px;
+    max-width: 380px;
     height: 100px;
 }
 
