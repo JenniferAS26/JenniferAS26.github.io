@@ -45,7 +45,7 @@ header {
     position: relative;
     display: flex;
     width: 100%;
-    min-width: 320px;
+    min-width: 288px;
     height: fit-content;
     justify-content: space-between;
     align-items: center;
@@ -334,6 +334,7 @@ main .main-formulario-container-button .main-formulario--button {
 
 footer {
     width: 100%;
+    min-width: 288px;
     height: 35px;
     background-color: var(--soft-blue);
     box-shadow: 4px 0px 8px rgba(29, 37, 71, 0.657);
