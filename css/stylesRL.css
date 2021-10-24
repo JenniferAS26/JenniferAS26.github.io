@@ -1,12 +1,7 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 :root {
     --dark-grey: #2e2e2e;
     --soft-blue: #597492;
+    --dark-blue: #153861;
     --blue-grey: #ADBCCE;
     --baby-blue: #DDEAF3;
     --cold-white: #FDFDFD;
@@ -19,6 +14,12 @@
     --soft-beige: #f3f2c9; */
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
@@ -28,6 +29,16 @@ html,
 body{
   width:100%;
   overflow-x:hidden;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
@@ -59,13 +70,67 @@ header .header-contianer--info {
     align-items: center;
 }
 
-.header-shopping-cart {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
+.header-container-right {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    width: 150px;
+    height: 35px;
 }
 
+.header-button--login {
+    width: 55px;
+    height: 55px;
+    background: #fabd3b;
+    box-shadow: 0px 4px 8px rgba(22, 16, 68, 0.603);
+    border: none;
+    border-radius: 2px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-right: 5px;
+}
+
+.header-shopping-cart {
+    width: 30px;
+    height: 30px;
+}
+
+.header-shopping--menu 
+.dropdown {
+    display: none;
+    position: absolute; 
+    text-decoration: none;   
+}
+
+.header-shopping--menu:hover .dropdown {
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: rgba(85, 207, 207, 0.219);
+    min-height: 400px;
+    min-width: 300px;
+}
+
+.img-courses {
+    width: 35px;
+    height: 35px;
+}
+
+.button {
+    background: var(--soft-blue);
+    color:white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+    font-size: 16px;
+    margin: 25px 0 15px 0;
+}
 
 
 main {
