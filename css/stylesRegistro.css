@@ -5,6 +5,7 @@
 }
 
 :root {
+    --yellow-gold: #fabd3b;
     --dark-grey: #2e2e2e;
     --soft-blue: #597492;
     --blue-grey: #ADBCCE;
@@ -146,7 +147,7 @@ main {
     height: 28px;
     margin-bottom: 20px;
     border-radius: 10px;
-    background-color: #fabd3b;
+    background-color: var(--yellow-gold);
     box-shadow: 0px 4px 8px rgb(89, 73, 30, 0.36);
     border: none;
     font-size: 1.6rem;
