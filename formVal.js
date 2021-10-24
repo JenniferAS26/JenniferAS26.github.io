@@ -6,7 +6,7 @@ function checkNombreCom(valor) {
        return false;
     }
     else if(valor.length < 4 || valor.length > 50) {
-        alert('El Nombre debe contener entre 4 y 30 caracteres');
+        alert('El Nombre debe contener entre 4 y 50 caracteres');
         return false;
     }
     else if(!expreg.test(valor)) {
