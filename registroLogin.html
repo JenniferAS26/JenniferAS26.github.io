@@ -17,22 +17,51 @@
             <figure>
                <img class="header--logo" src="./graphics/icons/pin.svg" alt="Logo de la empresa"> 
             </figure>
-            <h2>Learn</h2>
+            <a href="./index.html"><h2>Learn</h2>
+            </a>
         </div>
-        <figure>
-            <a href="./index.html">
-                <img class="header-home-icon" src="./graphics/icons/home.svg" alt="Icono para regresar a la pagina principal">
-            </a>
-        </figure>
-        <figure>
-            <a href="./cart.html">
-            <img class="header-shopping-cart" src="./graphics/icons/add_shopping_cart.svg" alt="Imagen de un carro de compra"> 
-            </a>
-        </figure>
+        <div class="header-container-right">
+            <div class="header-shopping--menu">
+                    <img class="header-shopping-cart" src="./graphics/icons/Cart.svg" alt="Imagen de un carro de compra"> 
+                    <span class="quantity-items"></span>
+                    <ul class="dropdown">
+                        <li class="clearfix">
+                            <img class="img-courses" src="./graphics/img/python.png" alt="item1" />
+                            <span class="item-name">Python</span>
+                            <span class="item-price">$57.000</span>
+                            <span class="item-quantity">Cantidad: 01</span>
+                        </li>
+
+                        <li class="clearfix">
+                            <img class="img-courses" src="./graphics/img/JavaScript-logo.png" alt="item1" />
+                            <span class="item-name">JavaScript</span>
+                            <span class="item-price">$53.200</span>
+                            <span class="item-quantity">Cantidad: 01</span>
+                        </li>
+
+                        <li class="clearfix">
+                            <img class="img-courses" src="./graphics/img/ingles.png" alt="item1" />
+                            <span class="item-name">Inglés</span>
+                            <span class="item-price">$57.000</span>
+                            <span class="item-quantity">Cantidad: 01</span>
+                        </li>
+
+                        <a href="./cart.html" class="button empty-shopping-cart">Pagar</a>
+                        <div class="total-items">
+                            <span class="price-items"></span>
+                            <button class="pay-items hidden-item"></button>
+                        </div>
+
+                    </ul>
+
+            </div>
+        </div>
+        
     </header>
+
     <main>
         <h2 class="main--title">Inscríbete y comienza a aprender.</h2>
-        <form action="./profile.html" id="register-form">
+        <form action="./profile.html" id="register-form" onsubmit="return validateRegisterForm();">
             <div class="main-formulario--campos">
                 <input id="nombreCom" class="input-text" type="text" placeholder="Nombre completo">
             </div>
@@ -46,16 +75,17 @@
             <input type="hidden" id="valida" value="0">
             <input class="input-button" type="submit" value="Regístrate">
         </form>
+
         <div  class="main-formulario-container-button">
             <h2 class="main-msj">¿Ya tienes una cuenta?</h2>
 
             <h3 class="main-login--title">¡Inicia sesión con tu cuenta de Learn!</h2>
             <form action="./profile.html" class="main-formulario" id="login-form">
                 <div class="main-formulario--campos">
-                    <input id="correo" class="input-login-email" type="email" placeholder="Correo electrónico">
+                    <input id="correoL" class="input-login-email" type="email" placeholder="Correo electrónico">
                 </div>
                 <div class="main-formulario--campos">
-                    <input id="contrasena" class="input-login-password" type="password" placeholder="Contraseña">
+                    <input id="contrasenaL" class="input-login-password" type="password" placeholder="Contraseña">
                 </div>
                 
                 <input class="input-login-button" type="submit" value="Iniciar sesión">
@@ -65,7 +95,7 @@
     </main>
     <footer></footer>
     <script type="text/javascript" src="./formVal.js"></script>
-    <script type="text/javascript" src="./login.js"></script>
     <script type="text/javascript" src="./register.js"></script>
+    <script type="text/javascript" src="./login.js"></script>
 </body>
 </html>
