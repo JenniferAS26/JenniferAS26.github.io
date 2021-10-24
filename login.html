@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <title>Ingresar</title>
-    <link rel="stylesheet" href="./css/stylesLogin.css">
+    <link rel="stylesheet" href="./css/stylesRL.css">
 </head>
 <body>
     <header>
@@ -17,33 +17,58 @@
             <figure>
                <img class="header--logo" src="./graphics/icons/pin.svg" alt="Logo de la empresa"> 
             </figure>
-            <h2>Learn</h2>
+            <a href="./index.html"><h2>Learn</h2>
+            </a>
         </div>
-        <figure>
-            <a href="./index.html">
-                <img class="header-home-icon" src="./graphics/icons/home.svg" alt="Icono para regresar a la pagina principal">
-            </a>
-        </figure>
-        <figure>
-            <a href="./cart.html">
-            <img class="header-shopping-cart" src="./graphics/icons/add_shopping_cart.svg" alt="Imagen de un carro de compra"> 
-            </a>
-        </figure>
+        <div class="header-container-right">
+            <div class="header-shopping--menu">
+                    <img class="header-shopping-cart" src="./graphics/icons/Cart.svg" alt="Imagen de un carro de compra"> 
+                    <span class="quantity-items"></span>
+                    <ul class="dropdown">
+                        <li class="clearfix">
+                            <img class="img-courses" src="./graphics/img/python.png" alt="item1" />
+                            <span class="item-name">Python</span>
+                            <span class="item-price">$57.000</span>
+                            <span class="item-quantity">Cantidad: 01</span>
+                        </li>
+
+                        <li class="clearfix">
+                            <img class="img-courses" src="./graphics/img/JavaScript-logo.png" alt="item1" />
+                            <span class="item-name">JavaScript</span>
+                            <span class="item-price">$53.200</span>
+                            <span class="item-quantity">Cantidad: 01</span>
+                        </li>
+
+                        <li class="clearfix">
+                            <img class="img-courses" src="./graphics/img/ingles.png" alt="item1" />
+                            <span class="item-name">Inglés</span>
+                            <span class="item-price">$57.000</span>
+                            <span class="item-quantity">Cantidad: 01</span>
+                        </li>
+
+                        <a href="./cart.html" class="button empty-shopping-cart">Pagar</a>
+                        <div class="total-items">
+                            <span class="price-items"></span>
+                            <button class="pay-items hidden-item"></button>
+                        </div>
+                    </ul>
+            </div>
+        </div>
+        
     </header>
 
     <main>
         <h2 class="main--title">¡Inicia sesión con tu cuenta de Learn!</h2>
-        <form action="" class="main-formulario">
+        <form action="./profile.html" class="main-formulario" id="login-form">
             <div class="main-formulario--campos">
-                <input class="input-email" type="email" placeholder="Correo electrónico">
+                <input id="correoL" class="input-login-email" type="email" placeholder="Correo electrónico">
             </div>
             <div class="main-formulario--campos">
-                <input class="input-password" type="password" placeholder="Contraseña">
+                <input id="contrasenaL" class="input-login-password" type="password" placeholder="Contraseña">
             </div>
             
-            <input class="input-button" type="submit" value="Iniciar sesión">
+            <input class="input-login-button" type="submit" value="Iniciar sesión">
         </form>
-
         <div>
             <h2 class="main-msj">¿Aún no tienes cuenta en Learn?</h2>
         </div>
@@ -55,6 +80,33 @@
     </main>
 
     <footer>
-    </footer>
+        <h4>Siguenos en:</h4>
+        <nav>
+            <ul class="footer-nav">
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <img src="./graphics/icons/facebook.svg" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/">
+                        <img src="./graphics/icons/twitter.svg" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/">
+                        <img src="./graphics/icons/instagram.svg" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://co.linkedin.com/">
+                        <img src="./graphics/icons/linkedin.svg" alt="LinkedIn">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+       
+    </footer>>
+    <script type="text/javascript" src="./login.js"></script>
 </body>
 </html>
