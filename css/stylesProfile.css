@@ -194,7 +194,6 @@ li img {
     margin: 25px 0 15px 0;
 }
 
-
 main {
     width: 100%;
     height: auto;
@@ -210,16 +209,16 @@ main .main-learning-container {
 
 main .main-imgbk {
     width: 100%;
-    min-width: 320px;
-    height: 50vh;
-    background-image: url('../graphics/img/learningthingsp2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    min-width: 288px;
+    height: auto;
     text-align: center;
 }
 
 main .main-learning-container h1 {
+    position: absolute;
+    justify-content: center;
+    top: calc(5% + 5px); /* ajuste titulo posición */
+    left: calc(50% - 108px);
     padding-top: 60px;
     font-size: 2.4rem;
     font-weight: bold;
@@ -228,7 +227,9 @@ main .main-learning-container h1 {
     
 }
 
-main .main-learning-container .main-input {
+main 
+.main-learning-container 
+.main-input {
     width: 530px;
     margin: 0 auto;
     margin-bottom: 35px;
