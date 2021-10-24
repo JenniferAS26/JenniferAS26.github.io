@@ -1,4 +1,5 @@
 :root {
+    --yellow-gold: #fabd3b;
     --dark-grey: #2e2e2e;
     --soft-blue: #597492;
     --dark-blue: #153861;
@@ -7,11 +8,6 @@
     --cold-white: #FDFDFD;
     --cold-blue: rgba(54, 163, 177, 0.055);
     --blue-aqua: #53b8bb;
-
-    /* --dark-green: #003638;
-    --soft-dgreen: #055052;
-    --blue-aqua: #53b8bb;
-    --soft-beige: #f3f2c9; */
 }
 
 * {
@@ -81,7 +77,7 @@ header .header-contianer--info {
 .header-button--login {
     width: 55px;
     height: 55px;
-    background: #fabd3b;
+    background: var(--yellow-gold);
     box-shadow: 0px 4px 8px rgba(22, 16, 68, 0.603);
     border: none;
     border-radius: 2px;
