@@ -2,8 +2,8 @@ let registros = [];
 
 function login() {
     let validado = false;
-    let email = document.querySelector('#correo');
-    let password = document.querySelector('#contrasena');
+    let email = document.querySelector('#correoL');
+    let password = document.querySelector('#contrasenaL');
     
     registros.forEach(registro => {
         if (email === registro.correo) {
@@ -19,3 +19,5 @@ function login() {
         alert('Datos incorrectos');
       }
 }
+
+module.exports.login = login;
