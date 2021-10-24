@@ -143,16 +143,15 @@ main .main-learning-container {
 
 main .main-imgbk {
     width: 100%;
-    min-width: 320px;
-    height: 50vh;
-    background-image: url('../graphics/img/learningthingsp2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    min-width: 288px;
+    height: auto;
     text-align: center;
 }
 
 main .main-learning-container h1 {
+    position: absolute;
+    top: calc(5% + 5px); /* ajuste titulo posición */
+    left: calc(50% - 118px);
     padding-top: 60px;
     font-size: 2.4rem;
     font-weight: bold;
