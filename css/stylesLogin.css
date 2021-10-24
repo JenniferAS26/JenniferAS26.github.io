@@ -5,6 +5,7 @@
 }
 
 :root {
+    --yellow-gold: #fabd3b;
     --dark-grey: #2e2e2e;
     --soft-blue: #597492;
     --blue-grey: #ADBCCE;
@@ -29,7 +30,6 @@ body{
   width:100%;
   overflow-x:hidden;
 }
-
 
 header {
     position: relative;
@@ -67,6 +67,8 @@ header .header-contianer--info {
     align-items: center;
 }
 
+
+
 main {
     display: flex;
     flex-direction: column;
@@ -76,8 +78,9 @@ main {
     height: auto;
     background-color: var(--cold-blue);
     text-align: center;
-
 }
+
+
 
 .main--title {
     font-size: 1.8rem;
@@ -87,13 +90,20 @@ main {
     margin-top: 30px;
 }
 
-.main-formulario--campos .input-email {
+.main-formulario--campos .input-text {
     width: 200px;
     border-radius: 100px;
     border: 1px solid #d8d9dd;
     margin-top: 25px;
     margin-bottom: 25px;
-    
+      
+}
+
+.main-formulario--campos .input-email {
+    width: 200px;
+    border-radius: 100px;
+    border: 1px solid #d8d9dd;
+    margin-bottom: 25px;
       
 }
 
@@ -103,6 +113,15 @@ main {
     border: 1px solid #d8d9dd;
     margin-bottom: 25px;
       
+}
+
+.main-formulario--campos .input-text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 180px;
+    height: 25px;
+    outline: none;
+    
 }
 
 .main-formulario--campos .input-email {
@@ -128,7 +147,7 @@ main {
     height: 28px;
     margin-bottom: 20px;
     border-radius: 10px;
-    background-color: #fabd3b;
+    background-color: var(--yellow-gold);
     box-shadow: 0px 4px 8px rgb(89, 73, 30, 0.36);
     border: none;
     font-size: 1.6rem;
