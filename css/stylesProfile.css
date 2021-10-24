@@ -8,6 +8,11 @@
     --cold-white: #FDFDFD;
     --cold-blue: rgba(54, 163, 177, 0.055);
     --blue-aqua: #53b8bb;
+
+    /* --dark-green: #003638;
+    --soft-dgreen: #055052;
+    --blue-aqua: #53b8bb;
+    --soft-beige: #f3f2c9; */
 }
 
 * {
@@ -61,11 +66,18 @@ header h2 {
     color: var(--cold-white);
 }
 
-header .header-container--info {
+header .header-contianer--info {
     display: flex;
     align-items: center;
 }
 
+.header-container-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    height: 35px;
+}
 
 .header-nav,
 .drop-nav {
@@ -76,19 +88,6 @@ header .header-container--info {
 li img {
     width: 35px;
     height: auto;
-}
-
-.badge {
-    background-color: #6394f8;
-    border-radius: 10px;
-    color: white;
-    display: inline-block;
-    font-size: 1.2rem;
-    line-height: 1.1rem;
-    padding: 3px 7px;
-    text-align: center;
-    vertical-align: middle;
-    white-space: nowrap; 
 }
 
 .header-nav {
@@ -151,6 +150,48 @@ li img {
 .dropdown:hover > .drop-nav {
     display: block;
     background: var(--blue-grey);
+}
+
+
+
+.header-shopping-cart {
+    width: 30px;
+    height: 30px;
+}
+
+.header-shopping--menu 
+.dropdown-shoping {
+    display: none;
+    position: absolute; 
+    text-decoration: none;   
+}
+
+.header-shopping--menu:hover .dropdown-shoping {
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: rgba(85, 207, 207, 0.219);
+    min-height: 400px;
+    min-width: 300px;
+}
+
+.clearfix .img-courses {
+    width: 35px;
+    height: 35px;
+}
+
+.button {
+    background: var(--soft-blue);
+    color:white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+    font-size: 16px;
+    margin: 25px 0 15px 0;
 }
 
 
