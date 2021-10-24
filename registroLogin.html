@@ -32,7 +32,7 @@
     </header>
     <main>
         <h2 class="main--title">Inscríbete y comienza a aprender.</h2>
-        <form action="./profile.html">
+        <form action="./profile.html" id="register-form">
             <div class="main-formulario--campos">
                 <input id="nombreCom" class="input-text" type="text" placeholder="Nombre completo">
             </div>
@@ -43,18 +43,19 @@
                 <input id="contrasena" class="input-password" type="password" placeholder="Contraseña">
             </div>
             
+            <input type="hidden" id="valida" value="0">
             <input class="input-button" type="submit" value="Regístrate">
         </form>
         <div  class="main-formulario-container-button">
             <h2 class="main-msj">¿Ya tienes una cuenta?</h2>
 
             <h3 class="main-login--title">¡Inicia sesión con tu cuenta de Learn!</h2>
-            <form action="./profile.html" class="main-formulario">
+            <form action="./profile.html" class="main-formulario" id="login-form">
                 <div class="main-formulario--campos">
-                    <input class="input-login-email" type="email" placeholder="Correo electrónico">
+                    <input id="correo" class="input-login-email" type="email" placeholder="Correo electrónico">
                 </div>
                 <div class="main-formulario--campos">
-                    <input class="input-login-password" type="password" placeholder="Contraseña">
+                    <input id="contrasena" class="input-login-password" type="password" placeholder="Contraseña">
                 </div>
                 
                 <input class="input-login-button" type="submit" value="Iniciar sesión">
@@ -65,6 +66,6 @@
     <footer></footer>
     <script type="text/javascript" src="./formVal.js"></script>
     <script type="text/javascript" src="./login.js"></script>
-    <script type="text/javascript" src="./registro.js"></script>
+    <script type="text/javascript" src="./register.js"></script>
 </body>
 </html>
