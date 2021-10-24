@@ -16,22 +16,43 @@
             <h2>Learn</h2>
         </div>
         <div class="header-container-right">
-            <figure>
-                <a href="./index.html">
-                    <img class="header-home-icon" src="./graphics/icons/home.svg" alt="Icono para regresar a la pagina principal">
-                </a>
-            </figure>
-
             <div class="header-container--icons">
-                    <a href="./login.html" class="header-button--login">Ingresar</a>
+                    <a href="./registroLogin.html" class="header-button--login">Ingresar</a>
             </div>
-            
             <div class="header-shopping--menu">
-                    <a href="./cart.html">
-                    <img class="header-shopping-cart" src="./graphics/icons/add_shopping_cart.svg" alt="Imagen de un carro de compra"> 
-                    </a>
+                    <img class="header-shopping-cart" src="./graphics/icons/Cart.svg" alt="Imagen de un carro de compra"> 
+                    <span class="quantity-items"></span>
+                    <ul class="dropdown">
+                        <li class="clearfix">
+                            <img class="img-courses" src="./graphics/img/python.png" alt="item1" />
+                            <span class="item-name">Python</span>
+                            <span class="item-price">$57.000</span>
+                            <span class="item-quantity">Cantidad: 01</span>
+                        </li>
+
+                        <li class="clearfix">
+                            <img class="img-courses" src="./graphics/img/JavaScript-logo.png" alt="item1" />
+                            <span class="item-name">JavaScript</span>
+                            <span class="item-price">$53.200</span>
+                            <span class="item-quantity">Cantidad: 01</span>
+                        </li>
+
+                        <li class="clearfix">
+                            <img class="img-courses" src="./graphics/img/ingles.png" alt="item1" />
+                            <span class="item-name">Inglés</span>
+                            <span class="item-price">$57.000</span>
+                            <span class="item-quantity">Cantidad: 01</span>
+                        </li>
+
+                        <a href="./cart.html" class="button empty-shopping-cart">Pagar</a>
+                        <div class="total-items">
+                            <span class="price-items"></span>
+                            <button class="pay-items hidden-item"></button>
+                        </div>
+                    </ul>
             </div>
         </div>
+        
     </header>
 
     <main>
