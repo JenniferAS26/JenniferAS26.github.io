@@ -9,14 +9,14 @@
 </head>
 <body>
     <header>
-        <div class="header-container--info">
+        <div class="header-contianer--info">
             <figure>
                <img class="header--logo" src="./graphics/icons/pin.svg" alt="Logo de la empresa"> 
             </figure>
             <a href="./index.html"><h2>Learn</h2>
-                </a>
+            </a>
         </div>
-        <section class="header-container-right">
+        <div class="header-container-right">
             <ul class="header-nav">
                 <li class="dropdown">
                     <img src="./graphics/icons/user.svg" alt="">
@@ -27,12 +27,40 @@
                     </ul>
                 </li>
             </ul>
-            <ul class="header-nav__cart">
-                <li class="dropdown-cart">
-                    <a href=""><img src="./graphics/icons/Cart.svg" alt="icono de carrito de compra"><span class="badge">3</span></a> 
-                </li>
-            </ul> 
-        </section>      
+            <div class="header-shopping--menu">
+                    <img class="header-shopping-cart" src="./graphics/icons/Cart.svg" alt="Imagen de un carro de compra"> 
+                    <span class="quantity-items"></span>
+                    <ul class="dropdown-shoping">
+                        <li class="clearfix">
+                            <img class="img-courses" src="./graphics/img/python.png" alt="item1" />
+                            <span class="item-name">Python</span>
+                            <span class="item-price">$57.000</span>
+                            <span class="item-quantity">Cantidad: 01</span>
+                        </li>
+
+                        <li class="clearfix">
+                            <img class="img-courses" src="./graphics/img/JavaScript-logo.png" alt="item1" />
+                            <span class="item-name">JavaScript</span>
+                            <span class="item-price">$53.200</span>
+                            <span class="item-quantity">Cantidad: 01</span>
+                        </li>
+
+                        <li class="clearfix">
+                            <img class="img-courses" src="./graphics/img/ingles.png" alt="item1" />
+                            <span class="item-name">Inglés</span>
+                            <span class="item-price">$57.000</span>
+                            <span class="item-quantity">Cantidad: 01</span>
+                        </li>
+
+                        <a href="./cart.html" class="button empty-shopping-cart">Pagar</a>
+                        <div class="total-items">
+                            <span class="price-items"></span>
+                            <button class="pay-items hidden-item"></button>
+                        </div>
+                    </ul>
+            </div>
+        </div>
+        
     </header>
 
     <main>
