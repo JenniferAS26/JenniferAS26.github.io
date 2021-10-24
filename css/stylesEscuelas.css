@@ -160,7 +160,10 @@ main .main-description-course {
 }
 
 .description-course--body {
+    display: inline-block;
     width: auto;
+    min-width: 288px;
+    max-width: 450px;
     height: auto;
     text-align: justify;
     font-size: 1.4rem;
