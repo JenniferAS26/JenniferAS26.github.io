@@ -57,6 +57,42 @@ app.get('/register', function(req, res){
     res.sendFile('registro.html', { root: '../../' })
 });
 
+app.get('/pythonCourse', function(req, res){
+    res.sendFile('pythonCourse.html', { root: '../../' })
+});
+
+app.get('/javascriptCourse', function(req, res){
+    res.sendFile('javascriptCourse.html', { root: '../../' })
+});
+
+app.get('/inglesCourse', function(req, res){
+    res.sendFile('inglesCourse.html', { root: '../../' })
+});
+
+app.get('/marketingCourse', function(req, res){
+    res.sendFile('marketingCourse.html', { root: '../../' })
+});
+
+app.get('/couchCourse', function(req, res){
+    res.sendFile('couchCourse.html', { root: '../../' })
+});
+
+app.get('/escuelaIngenieria', function(req, res){
+    res.sendFile('escuelaIngenieria.html', { root: '../../' })
+});
+
+app.get('/escuelaIngles', function(req, res){
+    res.sendFile('escuelaIngles.html', { root: '../../' })
+});
+
+app.get('/escuelaMarketing', function(req, res){
+    res.sendFile('escuelaMarketing.html', { root: '../../' })
+});
+
+app.get('/escuelaCouching', function(req, res){
+    res.sendFile('escuelaCouching.html', { root: '../../' })
+});
+
 app.post('/register', function(req, res){
     const name = req.body.name
     const username = req.body.email
@@ -69,7 +105,7 @@ app.post('/register', function(req, res){
             if(err) {
                 console.log(err)
             }
-            res.sendFile('login.html', { root: '.' });
+            res.sendFile('login.html', { root: '../../' });
         });        
     } else {
         res.sendFile('registro.html', { root: '.' })
@@ -80,7 +116,7 @@ app.post('/register', function(req, res){
 
 app.get("/profile", function(req, response){
     if (req.session.loggedin) {
-		response.sendFile('profile.html', { root: '.' });
+		response.sendFile('profile.html', { root: '../../' });
 	} else {
 		response.send('Please login to view this page!');
         response.end();
