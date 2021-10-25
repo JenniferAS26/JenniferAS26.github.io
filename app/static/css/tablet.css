@@ -115,3 +115,27 @@ main .main-input .search-icon {
     width: 100%;
     height: 100%;
 }
+
+.container-escuelas-in {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.container-escuelas-mark {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.container-escuelas-couch {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
