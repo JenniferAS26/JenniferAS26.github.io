@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escuela Ingeniaría</title>
     <link rel="stylesheet" href="./css/stylesEscuelas.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
 </head>
 <body>
     <header>
@@ -56,65 +57,72 @@
         
     </header>
     <main>
-        <section class="main-description-course">
-            <h1 class="description-course--title">Curso Básico de Python</h1>
-            <p class="description-course--body">Inicia en el mundo de la programación con el lenguaje de mayor crecimiento en el planeta: Python. Descubre qué es un algoritmo, y cómo se construye uno. Domina las variables, funciones, estructuras de datos, los condicionales y ciclos.</p>
-        </section>
+        <div class="container-escuelas-inge">
+            <div class="container-escuelas__courses">
+                <section class="main-description-course">
+                    <h1 class="description-course--title">Curso Básico de Python</h1>
+                    <p class="description-course--body">Inicia en el mundo de la programación con el lenguaje de mayor crecimiento en el planeta: Python. Descubre qué es un algoritmo, y cómo se construye uno. Domina las variables, funciones, estructuras de datos, los condicionales y ciclos.</p>
+                </section>
+                
+                <section class="main-student-detail">
+                    <article class="student-detail--card">
+                        <span class="student-detail--logo"></span>
+                        <p class="student-detail--p">150 Estudiantes</p> 
+                    </article>
+                </section>
+            
+                <section class="main-prices-detail">
+                    <article class="price-detail--before">
+                        <p class="price-detail--before-p">Antes: <b>$ 114.000</b></p>
+                        <div class="price-detail--now-descount">
+                          <p class="price-detail--before-a"><b>$ 57.000</b></p>  
+                          <h4 class="discount">50% dcto.</h4>
+                        </div>
+                    </article>
+                </section>
+                <section class="main-shopping-options">
+                    <a class="shopping-option--now" href="./cart.html">Compralo ahora</a>
+                    <div class="shopping-option--add">
+                        <span class="shopping-logo"></span>
+                        <a class="shopping-option-add--a" href="./cart.html">Agregar a mi carrito</a>  
+                    </div> 
+                </section>
+            </div>
+            
+            <div class="container-escuelas__courses">
+                <section class="main-description-course">
+                    <h1 class="description-course--title">Curso de Complejidad Algorítmica con JavaScript</h1>
+                    <p class="description-course--body">En este curso aprenderás la diferencia del costo temporal y el espacial de cada algoritmo que diseñes. Esto te dará una ventaja en el uso de recursos de cómputo y eficiencia en velocidad dentro de tus programas.</p>
+                </section>
+                
+                <section class="main-student-detail">
+                    <article class="student-detail--card">
+                        <span class="student-detail--logo"></span>
+                        <p class="student-detail--p">57 Estudiantes</p> 
+                    </article>
+                </section>
         
-        <section class="main-student-detail">
-            <article class="student-detail--card">
-                <span class="student-detail--logo"></span>
-                <p class="student-detail--p">150 Estudiantes</p> 
-            </article>
-        </section>
-    
-        <section class="main-prices-detail">
-            <article class="price-detail--before">
-                <p class="price-detail--before-p">Antes: <b>$ 114.000</b></p>
-                <div class="price-detail--now-descount">
-                  <p class="price-detail--before-a"><b>$ 57.000</b></p>  
-                  <h4 class="discount">50% dcto.</h4>
-                </div>
-            </article>
-        </section>
-    
-        <section class="main-shopping-options">
-            <a class="shopping-option--now" href="./cart.html">Compralo ahora</a>
-            <div class="shopping-option--add">
-                <span class="shopping-logo"></span>
-                <a class="shopping-option-add--a" href="./cart.html">Agregar a mi carrito</a>  
-            </div> 
-        </section>
-
-        <section class="main-description-course">
-            <h1 class="description-course--title">Curso de Complejidad Algorítmica con JavaScript</h1>
-            <p class="description-course--body">En este curso aprenderás la diferencia del costo temporal y el espacial de cada algoritmo que diseñes. Esto te dará una ventaja en el uso de recursos de cómputo y eficiencia en velocidad dentro de tus programas.</p>
-        </section>
+                <section class="main-prices-detail">
+                    <article class="price-detail--before">
+                        <p class="price-detail--before-p">Antes: <b>$ 133.000</b></p>
+                        <div class="price-detail--now-descount">
+                        <p class="price-detail--before-a"><b>$ 53.200</b></p>  
+                        <h4 class="discount">60% dcto.</h4>
+                        </div>
+                    </article>
+                </section>
         
-        <section class="main-student-detail">
-            <article class="student-detail--card">
-                <span class="student-detail--logo"></span>
-                <p class="student-detail--p">57 Estudiantes</p> 
-            </article>
-        </section>
-
-        <section class="main-prices-detail">
-            <article class="price-detail--before">
-                <p class="price-detail--before-p">Antes: <b>$ 133.000</b></p>
-                <div class="price-detail--now-descount">
-                  <p class="price-detail--before-a"><b>$ 53.200</b></p>  
-                  <h4 class="discount">60% dcto.</h4>
-                </div>
-            </article>
-        </section>
-
-        <section class="main-shopping-options">
-            <a class="shopping-option--now" href="./cart.html">Compralo ahora</a>
-            <div class="shopping-option--add">
-                <span class="shopping-logo"></span>
-                <a class="shopping-option-add--a" href="./cart.html">Agregar a mi carrito</a>  
-            </div> 
-        </section>
+                <section class="main-shopping-options">
+                    <a class="shopping-option--now" href="./cart.html">Compralo ahora</a>
+                    <div class="shopping-option--add">
+                        <span class="shopping-logo"></span>
+                        <a class="shopping-option-add--a" href="./cart.html">Agregar a mi carrito</a>  
+                    </div> 
+                </section>
+            </div>
+            
+        </div>
+        
 
     </main>
     <footer>
