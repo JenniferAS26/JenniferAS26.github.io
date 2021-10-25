@@ -19,10 +19,12 @@ app.use(bodyParser.json());
 var db = require('./db');
 var validate = require('./formVal')
 
-
+app.get('/', function(req, res) {
+     res.sendFile('index.html', { root: '../..' })
+})
 
 app.get('/login', function(req, res){
-    res.sendFile('login.html', { root: '.' })
+    res.sendFile('login.html', { root: '../..' })
 });
 
 app.post('/login', function(req, res){
@@ -52,7 +54,7 @@ app.post('/login', function(req, res){
 
 
 app.get('/register', function(req, res){
-    res.sendFile('registro.html', { root: '.' })
+    res.sendFile('registro.html', { root: '../../' })
 });
 
 app.post('/register', function(req, res){
@@ -86,7 +88,7 @@ app.get("/profile", function(req, response){
 	
 
 });
-app.listen('5001', function(err){
-    if(err) throw err;
-    console.log("Server Started at port No. 5001");
+app.listen('8080', function(err){
+    // if(err) throw err;
+    console.log("Server Started at port No. 8080");
 })
