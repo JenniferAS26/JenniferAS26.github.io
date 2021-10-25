@@ -1,3 +1,5 @@
+/* Index and Profile */
+
 main .main-learning-container h1 {
     position: absolute;
     top: calc(15% + 5px); /* ajuste titulo posición */
@@ -79,5 +81,31 @@ main .main-input .search-icon {
     justify-content: center;
 }
 
+/* Courses */
 
+.main-courses .courses-info {
+    display: flex;
+    text-align: center;
+    width: 1000px;
+}
+
+.courses-info .courses-info--left {
+    width: 100%;
+    height: auto;
+}
+
+.courses-info .courses-info--right {
+    width: 100%;
+    height: auto;
+    justify-items: center;
+}
+
+.main-nav-information {
+    width: 900px;
+}
+
+.container-info-req-tem {
+    display: flex;
+    /* flex-direction: column; */
+}
 
