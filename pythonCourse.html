@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso de Python</title>
     <link rel="stylesheet" href="./css/styleCourses.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
 </head>
 <body>
     <header>
@@ -56,37 +57,43 @@
         
     </header>
 
-    <main>
-        <section class="main-description-course">
-            <h1 class="description-course--title">Curso Básico de Python</h1>
-            <p class="description-course--body">Inicia en el mundo de la programación con el lenguaje de mayor crecimiento en el planeta: Python. Descubre qué es un algoritmo, y cómo se construye uno. Domina las variables, funciones, estructuras de datos, los condicionales y ciclos.</p>
-        </section>
+    <main class="main-courses">
+        <div class="courses-info">
+            <div class="courses-info--left">
+                <section class="main-description-course">
+                    <h1 class="description-course--title">Curso Básico de Python</h1>
+                    <p class="description-course--body">Inicia en el mundo de la programación con el lenguaje de mayor crecimiento en el planeta: Python. Descubre qué es un algoritmo, y cómo se construye uno. Domina las variables, funciones, estructuras de datos, los condicionales y ciclos.</p>
+                </section>
+                
+                <section class="main-student-detail">
+                    <article class="student-detail--card">
+                        <span class="student-detail--logo"></span>
+                        <p class="student-detail--p">150 Estudiantes</p> 
+                    </article>
+                </section>
+            </div>
+
+            <div class="courses-info--right">
+                <section class="main-prices-detail">
+                    <article class="price-detail--before">
+                        <p class="price-detail--before-p">Antes: <b>$ 114.000</b></p>
+                        <div class="price-detail--now-descount">
+                          <p class="price-detail--before-a"><b>$ 57.000</b></p>  
+                          <h4 class="discount">50% dcto.</h4>
+                        </div>
+                    </article>
+                </section>
         
-        <section class="main-student-detail">
-            <article class="student-detail--card">
-                <span class="student-detail--logo"></span>
-                <p class="student-detail--p">150 Estudiantes</p> 
-            </article>
-        </section>
-
-        <section class="main-prices-detail">
-            <article class="price-detail--before">
-                <p class="price-detail--before-p">Antes: <b>$ 114.000</b></p>
-                <div class="price-detail--now-descount">
-                  <p class="price-detail--before-a"><b>$ 57.000</b></p>  
-                  <h4 class="discount">50% dcto.</h4>
-                </div>
-            </article>
-        </section>
-
-        <section class="main-shopping-options">
-            <a class="shopping-option--now" href="./cart.html">Compralo ahora</a>
-            <div class="shopping-option--add">
-                <span class="shopping-logo"></span>
-                <a class="shopping-option-add--a" href="./cart.html">Agregar a mi carrito</a>  
-            </div> 
-        </section>
-
+                <section class="main-shopping-options">
+                    <a class="shopping-option--now" href="./cart.html">Compralo ahora</a>
+                    <div class="shopping-option--add">
+                        <span class="shopping-logo"></span>
+                        <a class="shopping-option-add--a" href="./cart.html">Agregar a mi carrito</a>  
+                    </div> 
+                </section>
+            </div>
+        </div>
+        
         <section class="main-nav-information">
             <nav>
                 <ul class="nav-information">
@@ -97,104 +104,107 @@
             </nav>
         </section> 
         
-        <section id="about" class="main-about">
-            <h3 class="main-about-info--title">Información del curso:</h3>
-            <div class="main-about-info">
-                <ul class="main-about-info--body">
-                    <div class="container-list">
-                        <span class="clock"></span>
-                        <li class="items">Duración: 4h</li>
-                    </div>
-                    <div class="container-list">
-                        <span class="bars"></span>
-                        <li class="items">Nivel: Básico</li>
-                    </div>
-                    <div class="container-list">
-                        <span class="certificado"></span>
-                        <li class="items">Certifícate al terminar</li>
-                    </div>  
-                </ul>
-            </div>
-
-            <div class="main-about-container">
-                <h3 class="about-container--title">¿Qué aprenderás en este curso de Python?</h3>
-                <ul class="about-container--body">
-                    <div class="container-list">
-                        <span class="icon-check"></span>
-                        <li class="items">Hacer estructuras de datos.</li>  
-                    </div>
-                    
-                    <div class="container-list">
-                        <span class="icon-check"></span>
-                        <li class="items">Crear bucles.</li>
-                    </div>
-                    
-                    <div class="container-list">
-                        <span class="icon-check"></span>
-                        <li class="items">Conocer herramientas para programar.</li>
-                    </div>
-                    
-                    <div class="container-list">
-                        <span class="icon-check"></span>
-                        <li class="items">Aprender conceptos básicos de Python.</li>
-                    </div>
-                </ul>
-            </div>
-        </section>
-
-        <section id="requisitos" class="main-requisitos">
-            <div class="main-requisitos-container">
-                <h3 class="requisitos-container--title">¿Qué necesito para tomar el curso básico de Python?</h3>
-                <ul class="requisitos-container--body">
-                    <div class="container-list">
-                        <span class="icon-requisitos"></span>
-                        <li class="items">Computadora o laptop con conexión a internet. </li>
-                    </div>
-
-                    <div class="container-list">
-                        <span class="icon-requisitos"></span>
-                        <li class="items">Software de Python.</li>
-                    </div>
-
-                    <div class="container-list">
-                        <span class="icon-requisitos"></span>
-                        <li class="items">Editor de texto.</li>
-                    </div> 
-            </div>
-        </section>
-
-        <section id="temario" class="main-temario">
-            <div class="main-temario-container">
-                <h3 class="temario-container--title">Temario y recursos del Curso Básico de Python</h3>
-                <ul class="temario-container--body">
-                    <div class="container-list">
-                        <span class="icon-temario"></span>
-                        <li class="items">Introducción a la programación con Python</li>
-                    </div>
-                    
-                    <div class="container-list">
-                        <span class="icon-temario"></span>
-                        <li class="items">Conceptos básicos de Python</li>
-                    </div>
-                    
-                    <div class="container-list">
-                        <span class="icon-temario"></span>
-                        <li class="items">Herramientas para programar</li>
-                    </div>
-                    
-                    <div class="container-list">
-                        <span class="icon-temario"></span>
-                        <li class="items">Bucles</li>
-                    </div>
-                    
-                    <div class="container-list">
-                      <span class="icon-temario"></span>
-                      <li class="items">Estructuras de datos</li>  
-                    </div>
-                    
-                </ul>
-            </div>
-        </section>
+        <div class="container-info-req-tem">
+            <section id="about" class="main-about">
+                <h3 class="main-about-info--title">Información del curso:</h3>
+                <div class="main-about-info">
+                    <ul class="main-about-info--body">
+                        <div class="container-list">
+                            <span class="clock"></span>
+                            <li class="items">Duración: 4h</li>
+                        </div>
+                        <div class="container-list">
+                            <span class="bars"></span>
+                            <li class="items">Nivel: Básico</li>
+                        </div>
+                        <div class="container-list">
+                            <span class="certificado"></span>
+                            <li class="items">Certifícate al terminar</li>
+                        </div>  
+                    </ul>
+                </div>
+    
+                <div class="main-about-container">
+                    <h3 class="about-container--title">¿Qué aprenderás en este curso de Python?</h3>
+                    <ul class="about-container--body">
+                        <div class="container-list">
+                            <span class="icon-check"></span>
+                            <li class="items">Hacer estructuras de datos.</li>  
+                        </div>
+                        
+                        <div class="container-list">
+                            <span class="icon-check"></span>
+                            <li class="items">Crear bucles.</li>
+                        </div>
+                        
+                        <div class="container-list">
+                            <span class="icon-check"></span>
+                            <li class="items">Conocer herramientas para programar.</li>
+                        </div>
+                        
+                        <div class="container-list">
+                            <span class="icon-check"></span>
+                            <li class="items">Aprender conceptos básicos de Python.</li>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+    
+            <section id="requisitos" class="main-requisitos">
+                <div class="main-requisitos-container">
+                    <h3 class="requisitos-container--title">¿Qué necesito para tomar el curso básico de Python?</h3>
+                    <ul class="requisitos-container--body">
+                        <div class="container-list">
+                            <span class="icon-requisitos"></span>
+                            <li class="items">Computadora o laptop con conexión a internet. </li>
+                        </div>
+    
+                        <div class="container-list">
+                            <span class="icon-requisitos"></span>
+                            <li class="items">Software de Python.</li>
+                        </div>
+    
+                        <div class="container-list">
+                            <span class="icon-requisitos"></span>
+                            <li class="items">Editor de texto.</li>
+                        </div> 
+                </div>
+            </section>
+    
+            <section id="temario" class="main-temario">
+                <div class="main-temario-container">
+                    <h3 class="temario-container--title">Temario y recursos del Curso Básico de Python</h3>
+                    <ul class="temario-container--body">
+                        <div class="container-list">
+                            <span class="icon-temario"></span>
+                            <li class="items">Introducción a la programación con Python</li>
+                        </div>
+                        
+                        <div class="container-list">
+                            <span class="icon-temario"></span>
+                            <li class="items">Conceptos básicos de Python</li>
+                        </div>
+                        
+                        <div class="container-list">
+                            <span class="icon-temario"></span>
+                            <li class="items">Herramientas para programar</li>
+                        </div>
+                        
+                        <div class="container-list">
+                            <span class="icon-temario"></span>
+                            <li class="items">Bucles</li>
+                        </div>
+                        
+                        <div class="container-list">
+                          <span class="icon-temario"></span>
+                          <li class="items">Estructuras de datos</li>  
+                        </div>
+                        
+                    </ul>
+                </div>
+            </section>
+        </div>
+        
 
     </main>
 
