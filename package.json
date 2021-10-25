@@ -1,0 +1,27 @@
+{
+  "name": "jenniferas26.github.io",
+  "version": "1.0.0",
+  "description": "Leeme",
+  "main": "app/js/app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.2",
+    "nodemon": "^2.0.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JenniferAS26/JenniferAS26.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JenniferAS26/JenniferAS26.github.io/issues"
+  },
+  "homepage": "https://github.com/JenniferAS26/JenniferAS26.github.io#readme"
+}

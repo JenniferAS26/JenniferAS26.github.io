@@ -59,15 +59,15 @@
 
     <main>
         <h2 class="main--title">Inscríbete y comienza a aprender.</h2>
-        <form action="./profile.html" id="register-form" onsubmit="return validateRegisterForm();">
+        <form action="/register" method="post" id="register-form" onsubmit="return validateRegisterForm();">
             <div class="main-formulario--campos">
-                <input id="nombreCom" class="input-text" type="text" placeholder="Nombre completo">
+                <input id="nombreCom" name="name" class="input-text" type="text" placeholder="Nombre completo">
             </div>
             <div class="main-formulario--campos">
-                <input id="correo" class="input-email" type="email" placeholder="Correo electrónico">
+                <input id="correo" name="email" class="input-email" type="email" placeholder="Correo electrónico">
             </div>
             <div class="main-formulario--campos">
-                <input id="contrasena" class="input-password" type="password" placeholder="Contraseña">
+                <input id="contrasena" name="password" class="input-password" type="password" placeholder="Contraseña">
             </div>
             
             <input type="hidden" id="valida" value="0">
